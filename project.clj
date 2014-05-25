@@ -46,8 +46,15 @@
 
    :3.4.9
    [:base
-    {:dependencies [[net.sourceforge.owlapi/owlapi-distribution "3.4.9"]]}]}
+    {:dependencies [[net.sourceforge.owlapi/owlapi-distribution "3.4.9"]
+                    [com.hermit-reasoner/org.semanticweb.hermit "1.3.8.3"]]}]
 
-  ;; 3.4.8, 3.4.5
+   :3.4.8
+   [:base
+    {:dependencies [[net.sourceforge.owlapi/owlapi-distribution "3.4.8"]
+                    [com.hermit-reasoner/org.semanticweb.hermit "1.3.8.2"]
+                    ]}]
 
+   ;; compatability with 3.4.5 and earlier are broken for datatype properties.
+   }
 )
